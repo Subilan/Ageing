@@ -1,0 +1,5 @@
+name: SpecialZone
+main: win.subilan.Ageing.Ageing
+version: "1"
+api: "1.15"
+author: Subilan
