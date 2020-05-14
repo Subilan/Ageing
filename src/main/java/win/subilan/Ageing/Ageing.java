@@ -39,4 +39,16 @@ public class Ageing extends JavaPlugin {
         }
         return YamlConfiguration.loadConfiguration(file);
     }
+
+    public void reloadData() {
+        this.ageData = this.load("age.yml");
+    }
+
+    public void saveData() {
+        try {
+            this.ageData.save(new File(this.getDataFolder(), "age.yml"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 }
