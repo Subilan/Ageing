@@ -3,3 +3,27 @@ main: win.subilan.Ageing.Ageing
 version: "1"
 api: "1.15"
 author: Subilan
+
+commands:
+  age:
+    description: Controls the Ageing plugin.
+    permission: ageing.command
+    permission-message: "You do not have the permission to use the command."
+    usage: /age <options>
+permissions:
+  ageing.*:
+    description: The super permission node for Ageing.
+    default: op
+    children:
+      ageing.command: true
+      ageing.set: true
+      ageing.get: true 
+  ageing.set:
+    description: Directly set a player's age.
+    default: op
+  ageing.get:
+    description: Get a player's age information.
+    default: op
+  ageing.command:
+    description: The base permission node to access all the commands.
+    default: op
