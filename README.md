@@ -4,4 +4,4 @@
 
 ## On hold notice
 
-This project will not actually begin until my return in the August 2020. Anyone can help by opening pull requests during this time, and I will check them as soon as I get free.
+This project will not actually start until my return in the August 2020. Anyone can help by opening pull requests during this time, and I will check them as soon as I get free.
